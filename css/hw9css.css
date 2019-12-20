@@ -1,0 +1,420 @@
+.draggable {
+    width: 80px;
+    height: 80px;
+    padding: 0.5em;
+    float: left;
+    margin: 0 10px 10px 0;
+    font-size: .9em;
+}
+
+#status {
+    position: absolute;
+    top: 190px;
+    left: 0px;
+}
+
+#div1 {
+    width: 120px;
+    height: 120px;
+    float: left;
+    background-image: url(images/Spot_blank.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#div2 {
+    width: 120px;
+    height: 120px;
+    float: left;
+    background-image: url(images/Spot_Double_Word.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#div3 {
+    width: 120px;
+    height: 120px;
+    float: left;
+    background-image: url(images/Spot_blank.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#div4 {
+    width: 120px;
+    height: 120px;
+    float: left;
+    background-image: url(images/Spot_blank.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#div5 {
+    width: 120px;
+    height: 120px;
+    float: left;
+    background-image: url(images/Spot_blank.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#div6 {
+    width: 120px;
+    height: 120px;
+    float: left;
+    background-image: url(images/Spot_Double_Word.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#div7 {
+    width: 120px;
+    height: 120px;
+    float: left;
+    background-image: url(images/Spot_blank.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#tiles {
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    width: 620px;
+    height: 170px;
+    background-image: url(images/Scrabble_Rack.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Atile {
+    width: 80px;
+    height: 80px;
+    padding: 0.5em;
+    float: left;
+    margin: 0 10px 10px 0;
+    background-image: url(images/Scrabble_Tile_A.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Btile {
+    width: 80px;
+    height: 80px;
+    padding: 0.5em;
+    float: left;
+    margin: 0 10px 10px 0;
+    background-image: url(images/Scrabble_Tile_B.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Ctile {
+    width: 80px;
+    height: 80px;
+    padding: 0.5em;
+    float: left;
+    margin: 0 10px 10px 0;
+    background-image: url(images/Scrabble_Tile_C.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Dtile {
+    width: 80px;
+    height: 80px;
+    padding: 0.5em;
+    float: left;
+    margin: 0 10px 10px 0;
+    background-image: url(images/Scrabble_Tile_D.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Etile {
+    width: 80px;
+    height: 80px;
+    padding: 0.5em;
+    float: left;
+    margin: 0 10px 10px 0;
+    background-image: url(images/Scrabble_Tile_E.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Ftile {
+    width: 80px;
+    height: 80px;
+    padding: 0.5em;
+    float: left;
+    margin: 0 10px 10px 0;
+    background-image: url(images/Scrabble_Tile_F.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Gtile {
+    width: 80px;
+    height: 80px;
+    padding: 0.5em;
+    float: left;
+    margin: 0 10px 10px 0;
+    background-image: url(images/Scrabble_Tile_G.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Htile {
+    width: 80px;
+    height: 80px;
+    padding: 0.5em;
+    float: left;
+    margin: 0 10px 10px 0;
+    background-image: url(images/Scrabble_Tile_H.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Itile {
+    width: 80px;
+    height: 80px;
+    padding: 0.5em;
+    float: left;
+    margin: 0 10px 10px 0;
+    background-image: url(images/Scrabble_Tile_I.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Jtile {
+    width: 80px;
+    height: 80px;
+    padding: 0.5em;
+    float: left;
+    margin: 0 10px 10px 0;
+    background-image: url(images/Scrabble_Tile_J.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Ktile {
+    width: 80px;
+    height: 80px;
+    padding: 0.5em;
+    float: left;
+    margin: 0 10px 10px 0;
+    background-image: url(images/Scrabble_Tile_K.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Ltile {
+    width: 80px;
+    height: 80px;
+    padding: 0.5em;
+    float: left;
+    margin: 0 10px 10px 0;
+    background-image: url(images/Scrabble_Tile_L.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Mtile {
+    width: 80px;
+    height: 80px;
+    padding: 0.5em;
+    float: left;
+    margin: 0 10px 10px 0;
+    background-image: url(images/Scrabble_Tile_M.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Ntile {
+    width: 80px;
+    height: 80px;
+    padding: 0.5em;
+    float: left;
+    margin: 0 10px 10px 0;
+    background-image: url(images/Scrabble_Tile_N.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Otile {
+    width: 80px;
+    height: 80px;
+    padding: 0.5em;
+    float: left;
+    margin: 0 10px 10px 0;
+    background-image: url(images/Scrabble_Tile_O.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Ptile {
+    width: 80px;
+    height: 80px;
+    padding: 0.5em;
+    float: left;
+    margin: 0 10px 10px 0;
+    background-image: url(images/Scrabble_Tile_P.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Qtile {
+    width: 80px;
+    height: 80px;
+    padding: 0.5em;
+    float: left;
+    margin: 0 10px 10px 0;
+    background-image: url(images/Scrabble_Tile_Q.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Rtile {
+    width: 80px;
+    height: 80px;
+    padding: 0.5em;
+    float: left;
+    margin: 0 10px 10px 0;
+    background-image: url(images/Scrabble_Tile_R.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Stile {
+    width: 80px;
+    height: 80px;
+    padding: 0.5em;
+    float: left;
+    margin: 0 10px 10px 0;
+    background-image: url(images/Scrabble_Tile_S.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Ttile {
+    width: 80px;
+    height: 80px;
+    padding: 0.5em;
+    float: left;
+    margin: 0 10px 10px 0;
+    background-image: url(images/Scrabble_Tile_T.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Utile {
+    width: 80px;
+    height: 80px;
+    padding: 0.5em;
+    float: left;
+    margin: 0 10px 10px 0;
+    background-image: url(images/Scrabble_Tile_U.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Vtile {
+    width: 80px;
+    height: 80px;
+    padding: 0.5em;
+    float: left;
+    margin: 0 10px 10px 0;
+    background-image: url(images/Scrabble_Tile_V.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Wtile {
+    width: 80px;
+    height: 80px;
+    padding: 0.5em;
+    float: left;
+    margin: 0 10px 10px 0;
+    background-image: url(images/Scrabble_Tile_W.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Xtile {
+    width: 80px;
+    height: 80px;
+    padding: 0.5em;
+    float: left;
+    margin: 0 10px 10px 0;
+    background-image: url(images/Scrabble_Tile_X.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Ytile {
+    width: 80px;
+    height: 80px;
+    padding: 0.5em;
+    float: left;
+    margin: 0 10px 10px 0;
+    background-image: url(images/Scrabble_Tile_Y.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Ztile {
+    width: 80px;
+    height: 80px;
+    padding: 0.5em;
+    float: left;
+    margin: 0 10px 10px 0;
+    background-image: url(images/Scrabble_Tile_Z.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Blanktile {
+    width: 80px;
+    height: 80px;
+    padding: 0.5em;
+    float: left;
+    margin: 0 10px 10px 0;
+    background-image: url(images/Scrabble_Tile_Blank.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
