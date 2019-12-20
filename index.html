@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!-- Cole Bugley
+     cole_bugley@student.uml.edu
+     UMass Lowell Computer Science, course 4610-201 GUI Programming
+     Created On: 12/16/19
+     Last Updated On: 12/16/19
+     Description:
+     Copyright (c) 2019 by Cole J. Bugley. All rights reserved. May be freely
+     copied or excerpted for education purposes with credit to the author.
+ -->
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>HW9</title>
+
+        <!-- stylesheets -->
+        <link rel="stylesheet" type="text/css" href="css/hw9css.css">
+        <link rel="stylesheet" type="text/css" href="java/jquery-ui-1.12.1/jquery-ui.css">
+    </head>
+    <body>
+        <!--<div id="snaptarget" class="spot ui-widget-header">
+            <p>I'm a snap target</p>
+        </div>-->
+
+        <div id="droppables">
+            <div id="div1"></div>
+            <div id="div2"></div>
+            <div id="div3"></div>
+            <div id="div4"></div>
+            <div id="div5"></div>
+            <div id="div6"></div>
+            <div id="div7"></div>
+        </div>
+
+        <div id="tiles">
+            <!--<div id="Wtile" class="draggable ui-widget-content" data-object="1">
+                <p>Drag me around</p>
+            </div>
+
+            <div id="draggable2" class="draggable ui-widget-content" data-object="2">
+                <p>Drag me around</p>
+            </div>-->
+
+            <div id="status">
+                Div1 value : <div id="div1_value">null</div>
+                Div2 value : <div id="div2_value">null</div>
+                Div3 value : <div id="div3_value">null</div>
+                Div4 value : <div id="div4_value">null</div>
+                Div5 value : <div id="div5_value">null</div>
+                Div6 value : <div id="div6_value">null</div>
+                Div7 value : <div id="div7_value">null</div>
+                Total Score: <div id="final_score">null</div>
+            </div>
+        </div>
+
+        <form onsubmit="process2()">
+            <input type="submit" value="New Tile">
+        </form>
+
+        <form onsubmit="process3()">
+            <input type="submit" value="Submit Word">
+        </form>
+
+        <!-- scripts -->
+        <script src="java/hw9java.js">
+        </script>
+        <script src="java/jquery-3.4.1.js">
+        </script>
+        <script src="java/jquery-ui-1.12.1/jquery-ui.js">
+        </script>
+        <script>
+        $(document).ready(function() {
+            //$( "#Wtile" ).draggable({ revert: "invalid" });
+            //$( "#draggable2" ).draggable({ revert: "invalid" });
+
+            $('#div1').droppable({
+                drop: function(event, ui)
+                {
+                    $(this).text("");
+                    $("#div1_value").text(ui.draggable.data("object"));
+                    //$(ui.draggable).appendTo(this);
+                    ui.draggable.position({
+                        my: "center",
+                        at: "center",
+                        of: $(this),
+                        using: function(pos) {
+                            $(this).animate(pos, 200, "linear");
+                        }
+                    });
+                    ui.helper.data('dropped1', true);
+                },
+                out: function(event, ui)
+                {
+                    ui.helper.data('dropped1', false);
+                }
+            });
+            $("#div2").droppable({
+                drop: function(event, ui)
+                {
+                    $(this).text("");
+                    $("#div2_value").text(ui.draggable.data("object"));
+                    //$(ui.draggable).appendTo(this);
+                    ui.draggable.position({
+                        my: "center",
+                        at: "center",
+                        of: $(this),
+                        using: function(pos) {
+                            $(this).animate(pos, 200, "linear");
+                        }
+                    });
+                    ui.helper.data('dropped2', true);
+                },
+                out: function(event, ui)
+                {
+                    ui.helper.data('dropped2', false);
+                }
+            });
+            $("#div3").droppable({
+                drop: function(event, ui)
+                {
+                    $(this).text("");
+                    $("#div3_value").text(ui.draggable.data("object"));
+                    //$(ui.draggable).appendTo(this);
+                    ui.draggable.position({
+                        my: "center",
+                        at: "center",
+                        of: $(this),
+                        using: function(pos) {
+                            $(this).animate(pos, 200, "linear");
+                        }
+                    });
+                    ui.helper.data('dropped3', true);
+                },
+                out: function(event, ui)
+                {
+                    ui.helper.data('dropped3', false);
+                }
+            });
+            $('#div4').droppable({
+                drop: function(event, ui)
+                {
+                    $(this).text("");
+                    $("#div4_value").text(ui.draggable.data("object"));
+                    //$(ui.draggable).appendTo(this);
+                    ui.draggable.position({
+                        my: "center",
+                        at: "center",
+                        of: $(this),
+                        using: function(pos) {
+                            $(this).animate(pos, 200, "linear");
+                        }
+                    });
+                    ui.helper.data('dropped4', true);
+                },
+                out: function(event, ui)
+                {
+                    ui.helper.data('dropped4', false);
+                }
+            });
+            $("#div5").droppable({
+                drop: function(event, ui)
+                {
+                    $(this).text("");
+                    $("#div5_value").text(ui.draggable.data("object"));
+                    //$(ui.draggable).appendTo(this);
+                    ui.draggable.position({
+                        my: "center",
+                        at: "center",
+                        of: $(this),
+                        using: function(pos) {
+                            $(this).animate(pos, 200, "linear");
+                        }
+                    });
+                    ui.helper.data('dropped5', true);
+                },
+                out: function(event, ui)
+                {
+                    ui.helper.data('dropped5', false);
+                }
+            });
+            $("#div6").droppable({
+                drop: function(event, ui)
+                {
+                    $(this).text("");
+                    $("#div6_value").text(ui.draggable.data("object"));
+                    //$(ui.draggable).appendTo(this);
+                    ui.draggable.position({
+                        my: "center",
+                        at: "center",
+                        of: $(this),
+                        using: function(pos) {
+                            $(this).animate(pos, 200, "linear");
+                        }
+                    });
+                    ui.helper.data('dropped6', true);
+                },
+                out: function(event, ui)
+                {
+                    ui.helper.data('dropped6', false);
+                }
+            });
+            $("#div7").droppable({
+                drop: function(event, ui)
+                {
+                    $(this).text("");
+                    $("#div7_value").text(ui.draggable.data("object"));
+                    //$(ui.draggable).appendTo(this);
+                    ui.draggable.position({
+                        my: "center",
+                        at: "center",
+                        of: $(this),
+                        using: function(pos) {
+                            $(this).animate(pos, 200, "linear");
+                        }
+                    });
+                    ui.helper.data('dropped7', true);
+                },
+                out: function(event, ui)
+                {
+                    ui.helper.data('dropped7', false);
+                }
+            });
+
+        });
+        </script>
+    </body>
+</html>
